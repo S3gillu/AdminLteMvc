@@ -1,0 +1,16 @@
+﻿
+@{
+    
+    Layout = "~/Views/Shared/_AdminLteLayout.cshtml";
+    ViewBag.Title = "Page Header";
+    ViewBag.TitleSmall = "Optional description";
+
+    ViewBag.Breadcrumb = new Breadcrumb(new Crumb[] {
+        new Crumb("Level > Here", "", "fa-dashboard")
+    });
+}
+
+@section scripts {
+    <script src="~/Scripts/AdminLTE/pages/dashboard2.js"></script>
+    <script src="~/Scripts/AdminLTE/demo.js"></script>
+}
